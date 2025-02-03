@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f4f4f4, #e0e0e0); /* Default gradient background */
+  transition: all 500ms; /* Smooth transition for theme changes */
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 10px;
+}
+
+/* Light Theme */
+.App.light {
+  background: linear-gradient(135deg, #ffffff, #f4f4f4); /* Light gradient */
+  color: #000000; /* Dark text for light background */
+}
+
+/* Medium Theme */
+.App.medium {
+  background: linear-gradient(135deg, #efefef, #dcdcdc); /* Medium gradient */
+  color: #333333; /* Slightly darker text for medium background */
+}
+
+/* Dark Theme */
+.App.dark {
+  background: linear-gradient(135deg, #15202b, #1c2a3a); /* Dark gradient */
+  color: #ffffff; /* Light text for dark background */
+}
